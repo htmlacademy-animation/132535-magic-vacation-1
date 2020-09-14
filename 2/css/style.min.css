@@ -1318,7 +1318,8 @@ img {
   width: calc(100% - 21rem);
   margin-right: 3rem;
   border-radius: 3rem;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black); }
   @media (min-width: 2000px) {
     .form__field-wrapper {
       margin-right: 30px;
@@ -1904,9 +1905,7 @@ img {
       height: 2px;
       background-color: currentColor;
       right: 0;
-      transition-property: width, background-color;
-      transition-duration: 0.3s;
-      transition-timing-function: ease-out; }
+      transition: width 0.3s ease-out; }
       @media (max-width: 1024px) and (orientation: portrait) {
         .page-header__menu a::after {
           left: 0;
